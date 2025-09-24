@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 16px 60px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-left {
+  position: absolute;
+  left: 60px;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* links container pill style */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  font-weight: 500;
+  margin: 0;
+  padding: 10px 30px;         /* padding inside pill */
+  background: rgba(255, 255, 255, 0.3); /* translucent background */
+  border-radius: 40px;        /* pill shape */
+  backdrop-filter: blur(8px); /* nice glass effect */
+}
+
+/* reset link styles */
+.nav-links a {
+  text-decoration: none;
+  color: #000;                /* dark text like your screenshot */
+  transition: color 0.2s;
+  text-align: center;
+}
+
+/* hover effect */
+.nav-links a:hover {
+  color: #10b0ff;
+}
+
+/* active link */
+.nav-links a.active {
+  color: #10b0ff;
+  font-weight: 600;
+}
+
+.nav-right {
+  position: absolute;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.register-btn {
+  background: #10b0ff;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.register-btn:hover {
+  background: #0a8cd6;
+}
+
+.profile {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}

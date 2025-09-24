@@ -1,0 +1,273 @@
+/* .about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.about-image {
+  flex: 1;
+  /* background-color: #ffffff; /* match section color */
+  /* padding: 16px;            /* white canvas frame around image */
+  /* border-radius: 16px;      soften corners
+} */ 
+
+/* .img-main {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-content {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* Aya's image as circular profile */
+/* .profile-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+} */
+
+/* .features {
+    height: 100vh;
+    width: 100%;
+} */ 
+
+/* Category buttons */
+/* .cats {
+    display: flex; needed for justify-content & align-items */
+    /* justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cats button {
+    width: 200px;
+    color: black;
+    background-color: white;
+    border: 3px solid #00B3E6;
+    border-radius: 40px;
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cats button:hover {
+    background-color: #00B3E6;
+    color: white;
+}
+
+.cats .main {
+    background-color: #00B3E6;
+    color: white;
+} */
+
+/* Featured provider heading */
+/* .featured-provider h3 {
+    color: white;
+    background-color: #2457B8;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: 500;
+}
+
+.featured-provider h1 {
+    font-size: 60px;
+    margin-left: 40px;
+}
+
+.featured-provider h1 span {
+    color: #00B3E6;
+} */
+
+/* Featured images */
+/* .featured-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.featured-images img {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */ 
+
+
+/* ----------about-section----------------  */
+
+/* Reset and common styles */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 5%;
+  background-color: #f9f9f9; /* Optional subtle background */
+}
+
+.about-img {
+  flex: 1 1 45%;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  flex: 1 1 45%;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-text .tag {
+  display: inline-block;
+  background-color: #2457B8;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.about-text .title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-text .title span {
+  color: #00B3E6;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.features-list {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.features-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #444;
+}
+
+.features-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00B3E6;
+  font-weight: bold;
+}
+
+.btn-read {
+  display: inline-block;
+  background-color: #00B3E6;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-read:hover {
+  background-color: #0095c9;
+  transform: translateY(-2px);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.author-info h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.author-info small {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-text, .about-img {
+    flex: 1 1 100%;
+  }
+  .about-text .title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-text .title {
+    font-size: 24px;
+  }
+  .btn-read {
+    padding: 8px 20px;
+  }
+  .author img {
+    width: 40px;
+    height: 40px;
+  }
+}
